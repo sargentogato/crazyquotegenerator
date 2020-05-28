@@ -1,4 +1,7 @@
 # Quotations Generator
+You can go directly to the web 
+
+https://sargentogato.github.io/crazyquotegenerator/
 
 ## Intro
 
