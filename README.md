@@ -18,5 +18,8 @@ If you clicked on "Custom Quotes",
 - once you have done, choose one number between one and five and click Generate Quotations. 
  If you want to comeback to the home, just click the back button
 
+ ## Access to the website
+ [crazyquotegenerator](https://sargentogato.github.io/crazyquotegenerator/)
+
 **by Sargentogato **
 
