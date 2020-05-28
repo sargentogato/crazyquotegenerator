@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Quotation Generator</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="sub-container">
+      <div class="button-textbox"> <!--Box new divs, inputs(forms / radios) and buttons-->
+        <div class="quote-textBox-customized" id="quote-text"></div> <!--Box new divs-->
+        <div id="inputBox">
+          <form action="" name="radioBox">
+            <label for="motivation">Motivation</label>
+            <input type="radio" name="radios" id="typeQuote" value="motivation">
+            <label for="life">Life</label>
+            <input type="radio" name="radios" id="typeQuote" value="life">
+          </form>
+          <form action="" name="radioNumberBox">
+            <label for="1">1</label>
+            <input type="radio" name="radios" id="numberQuote" value="1">
+            <label for="2">2</label>
+            <input type="radio" name="radios" id="numberQuote" value="2">
+            <label for="3">3</label>
+            <input type="radio" name="radios" id="numberQuote" value="3">
+            <label for="4">4</label>
+            <input type="radio" name="radios" id="numberQuote" value="4">
+            <label for="5">5</label>
+            <input type="radio" name="radios" id="numberQuote" value="5">
+          </form>
+       </div>
+<!-- Box buttons -->
+        <div id="child-subContainer">
+          <button id="triggerQuote">Generate Quotations</button>
+          <button class="back" value="Back" onclick="window.history.back(-1)">Back</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Sargentogato</p>
+    </footer>
+  </div>
+</body>
+
+<script src="../scripts/customized.js"></script>
+</html>
+
+</div>

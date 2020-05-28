@@ -1,0 +1,256 @@
+Html {
+  Box-sizing: border-box;
+	Font-family: sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root{
+	--color-circle:yellow;
+	--color-circle-hover:#FFBB09;
+	--color-background:black;
+	--color-footer: #FFBB09;
+	--text-color: black;
+	--text-color-hover:black; 
+	--margin-buttons:0.30em;
+	--border-radius:2em;
+	--font-size:1em;
+	--font-quotes:1.5em
+}
+
+/*******************************************Main container************************************/
+.main-container{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	background-color: var(--color-background);
+}
+
+/*********************************************Sub container***********************************/
+
+.sub-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+}
+
+/*******************************************Index page****************************************/
+.quote-acces{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.quote-acces{
+	width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  font-size: 2em;
+	text-align: center;
+	background-color: var(--color-circle);
+	margin-left: 1em;
+}
+
+.quote-acces:hover{
+	cursor: hand;
+	cursor: pointer;
+	background-color: var(--color-circle-hover);
+	font-size: 2.2em;
+	color: var(--text-color-hover)
+}
+
+a.divClickable {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+}
+
+/*******************************************Random Quote page*********************************/
+
+/*box containing text and buttons*/
+.button-textbox{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*Text*/
+.quote-textBox{
+	width: 100%;
+/* 	display: inline-flex;
+	justify-content: center; */
+
+	color: white;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.quote-textBox>div:nth-child(1),
+.quote-textBox>div:nth-child(2),
+.quote-textBox>div:nth-child(3){
+	display: inline-flex;
+	color:red;
+}
+
+.quote-textBox>div:nth-child(2){
+	margin-left: 0.2em;
+	color: yellow;
+}
+
+.quote-textBox>div:nth-child(3){
+	margin-left: 0.2em;
+	color:green;
+}
+
+/*******************************************Cutom Quotes**************************************/
+.quote-textBox-customized{
+	width: 100%;
+	color: white;
+	text-align: center;
+	margin-bottom: 2em;
+	font-size: var(--font-quotes);
+}
+
+form{
+	color: white;
+}
+
+.quote-textBox-customized>div:nth-child(1),
+.quote-textBox-customized>div:nth-child(2),
+.quote-textBox-customized>div:nth-child(3)
+{
+	display: inline-flex;
+	margin-left: 0.2em;
+	margin-bottom:0.5em;
+	color: red;
+}
+
+.quote-textBox-customized>div:nth-child(5),
+.quote-textBox-customized>div:nth-child(6),
+.quote-textBox-customized>div:nth-child(7)
+{
+	display: inline-flex;
+	margin-bottom:0.5em;
+	margin-left: 0.2em;
+	color:blueviolet;
+}
+
+.quote-textBox-customized>div:nth-child(9),
+.quote-textBox-customized>div:nth-child(10),
+.quote-textBox-customized>div:nth-child(11)
+{
+	display: inline-flex;
+	margin-bottom:0.5em;
+	margin-left: 0.2em;
+	color:green;
+}
+
+.quote-textBox-customized>div:nth-child(13),
+.quote-textBox-customized>div:nth-child(14),
+.quote-textBox-customized>div:nth-child(15)
+{
+	display: inline-flex;
+	margin-bottom:0.5em;
+	margin-left: 0.2em;
+	color:pink;
+}
+
+.quote-textBox-customized>div:nth-child(17),
+.quote-textBox-customized>div:nth-child(18),
+.quote-textBox-customized>div:nth-child(19)
+{
+	display: inline-flex;
+	margin-bottom:0.5em;
+	margin-left: 0.2em;
+	color:white;
+}
+
+
+/*Buttons */
+.child-subcontainer{
+	display:flex;
+	justify-content: center;
+
+}
+
+button {
+	width: 11em;
+	background-color:#44c767;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:var(--font-size);
+	padding:0.5em;
+	outline-style:none;
+}
+
+.builderQuotes{
+	margin-right: var(--margin-buttons);
+}
+
+.back{
+	margin-left: var(--margin-buttons);
+}
+
+/*******************************************Footer********************************************/
+
+footer{
+	height: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-footer);
+}
+
+/*******************************************Media Querie 768**********************************/
+
+@media screen and (max-width:767px) {
+	.sub-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.circle-2 {
+		margin-top: 1em;
+	}
+
+	.quote-acces {
+		width: 10em;
+		height: 10em;
+		border-radius: 50%;
+		font-size: 1.5em;
+	}
+
+	.quote-acces:hover {
+		cursor: hand;
+		cursor: pointer;
+		background-color: var(--color-circle-hover);
+		font-size: 2.2em;
+		color: var(--text-color-hover)
+	}
+}
+
+/*******************************************Media Querie 320**********************************/
+
+@media screen and (max-width:320px){
+	.quote-acces{
+		width: 9em;
+		height: 9em;
+		border-radius: 50%;
+		font-size: 1.36em;
+	}
+}
